@@ -22,30 +22,41 @@ Este projeto é uma API simples de gerenciamento de usuários, construída com N
 ```
 cd UserManagerAPI
 ```
+
 3. Instale as dependências:
+```
 npm install
+```
 
 4. Configure o banco de dados PostgreSQL no arquivo .env:
 
+```
 Crie um arquivo .env na raiz do projeto e adicione a seguinte linha, substituindo as informações do DATABASE_URL conforme necessário:
+```
 
 5. Execute as migrações do Prisma para criar as tabelas no banco de dados:
-npx prisma migrate dev
 
+```
+npx prisma migrate dev
+```
 
 
 ## Como Rodar o Projeto:
 
+
 1. Execute o servidor:
+
+```
 npm start
 O servidor rodará na porta 3000.
 
 Teste a API usando uma ferramenta como Postman ou curl.
-
+```
 
 
 ## Endpoints da API
 
+```
 Criar um usuário
 Endpoint: POST /usuarios
 
@@ -69,6 +80,9 @@ Copiar código
   "name": "John Doe",
   "idade": "30"
 }
+```
+
+```
 Listar todos os usuários
 Endpoint: GET /usuarios
 
@@ -86,6 +100,9 @@ Copiar código
     "idade": "30"
   }
 ]
+```
+
+```
 Editar um usuário
 Endpoint: PUT /usuarios/:id
 
@@ -109,6 +126,9 @@ Copiar código
   "name": "John Smith",
   "idade": "35"
 }
+```
+
+```
 Deletar um usuário
 Endpoint: DELETE /usuarios/:id
 
@@ -121,8 +141,10 @@ Copiar código
 {
   "message": "User deletado com sucesso!"
 }
-
+```
 
 ## Observações
-O Prisma ORM é utilizado para interagir com o banco de dados PostgreSQL, permitindo operações como criação, leitura, atualização e exclusão de usuários.
 
+```
+O Prisma ORM é utilizado para interagir com o banco de dados PostgreSQL, permitindo operações como criação, leitura, atualização e exclusão de usuários.
+```
