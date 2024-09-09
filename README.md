@@ -18,16 +18,23 @@ Este projeto é uma API simples de gerenciamento de usuários, construída com N
 
    
 2. Acesse o diretório do projeto:
+
+```bash
 cd UserManagerAPI
 
 3. Instale as dependências:
+
+```bash
 npm install
 
 4. Configure o banco de dados PostgreSQL no arquivo .env:
 
+```bash
 Crie um arquivo .env na raiz do projeto e adicione a seguinte linha, substituindo as informações do DATABASE_URL conforme necessário:
 
 5. Execute as migrações do Prisma para criar as tabelas no banco de dados:
+
+```bash
 npx prisma migrate dev
 
 
@@ -35,6 +42,8 @@ npx prisma migrate dev
 ## Como Rodar o Projeto:
 
 1. Execute o servidor:
+
+```bash
 npm start
 O servidor rodará na porta 3000.
 
@@ -44,6 +53,7 @@ Teste a API usando uma ferramenta como Postman ou curl.
 
 ## Endpoints da API
 
+```bash
 Criar um usuário
 Endpoint: POST /usuarios
 
